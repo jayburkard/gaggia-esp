@@ -5,4 +5,6 @@ Existing project replaces the Gaggia Classic's mechanical thermostat with a 4mm 
 
 The ESP8266 reports boiler temperature and raw controller output to home assistant via MQTT - this allows me to see when the boiler is fully up to temperature and stable.
 
+I plan on eventually monitoring button presses to have a fixed PWM value during shot pulling, but the current control strategy is moderate gain with an aggressive derivative term to take action as soon as temperature starts to drop.
+
 Future plans include a flow meter + SSR for the pump to volumetrically dose shots. Thanks much to the many gaggia/arduino pioneers ahead of me for the inspiration.
